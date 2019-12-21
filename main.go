@@ -135,7 +135,7 @@ func main() {
 	go httpServer(authCodeCh)
 
 	url := secretConfig.createAuthUrl(scopeUrl)
-	fmt.Println("Click here and authorize your account.")
+	fmt.Println("Access this URL and authorize your account.")
 	fmt.Println(url)
 
 	var authCode string
